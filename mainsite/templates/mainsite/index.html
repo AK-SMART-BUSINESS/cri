@@ -7,7 +7,7 @@
         {% if home.banner %}
             <img src="" alt="Banniere" />
         {% endif %}
-        {{ home.content }}
+        {{ home.content | safe }}
     {% else %}
         <p>Page en construction</p>
     {% endif %}
