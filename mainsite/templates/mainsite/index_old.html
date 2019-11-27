@@ -1,0 +1,16 @@
+{% extends 'mainsite/base.html' %}
+
+{% block page_title %} CRI | Accueil {% endblock %}
+
+{% block page_content %}
+    {% if home %}
+        {% if home.banner %}
+            <img src="" alt="Banniere" />
+        {% endif %}
+        {{ home.content | safe }}
+    {% else %}
+        <p>Page en construction</p>
+    {% endif %}
+<h1>Site index page</h1>
+{% endblock %}
+
