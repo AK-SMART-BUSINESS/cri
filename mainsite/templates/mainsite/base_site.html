@@ -128,24 +128,37 @@
   <!--==========================
     Intro Section
   ============================-->
-  <section id="intro">
+    <section id="intro">
 
 
-    <div id="intro-carousel" class="owl-carousel"  >
-        <div class="item" style="background-image: url({% static 'mainsite/img/archive/etudedemarche.png' %});"></div>
-        <div class="item" style="background-image: url({% static 'mainsite/img/archive/presse.png' %});"></div>
-        <div class="item" style="background-image: url({% static 'mainsite/img/archive/marketing.png' %});"></div>
-        <div class="item" style="background-image: url({% static 'mainsite/img/archive/strategie.png' %});"></div>
+        <div id="intro-carousel" class="owl-carousel"  >
+            <div class="item" style="background-image: url({% static 'mainsite/img/archive/etudedemarche.png' %});"></div>
+            <div class="item" style="background-image: url({% static 'mainsite/img/archive/presse.png' %});"></div>
+            <div class="item" style="background-image: url({% static 'mainsite/img/archive/marketing.png' %});"></div>
+            <div class="item" style="background-image: url({% static 'mainsite/img/archive/strategie.png' %});"></div>
+        </div>
+
+        <div id="introText">
+            {% block intro %}
+            {% endblock intro %}
+        </div>  
+
+    </section><!-- #intro -->
+
+    <div id="flash" class="row">
+        <div class="col col-sm-1" id="flashTitle">Info &gt;</div>
+        <div class="col col-sm-11" id="flashInfo">
+            <marquee class="defil">Text information</marquee>
+        </div>
     </div>
 
-    <div id="introText">
-        {% block intro %}
-        {% endblock intro %}
-    </div>  
+    <hr style="margin:0px">
 
-  </section><!-- #intro -->
-  {% block content %}
-  {% endblock content %}
+    {% block breakcump %}
+    {% endblock breakcump %}
+
+    {% block content %}
+    {% endblock content %}
 
   
   <!--==========================

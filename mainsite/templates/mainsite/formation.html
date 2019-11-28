@@ -33,6 +33,16 @@
   </main>
 {% endblock content %}
 
+{% block breakcump %}
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb" style="padding: 0.1rem 1rem !important;background: #fff">
+            <li class="breadcrumb-item"><a href="/"><i class="fa fa-home"></i></a></li>
+            <li class="breadcrumb-item"><a href="/departement">Départements</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Formations</li>
+        </ol>
+    </nav>
+{% endblock breakcump %}
+
 {% block intro %}
     <h1>Département - Formation</h1>
 {% endblock intro %}

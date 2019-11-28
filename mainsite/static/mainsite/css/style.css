@@ -1174,3 +1174,14 @@ body.mobile-nav-active #mobile-nav-toggle {
     margin-top: 20px;
   }
 }
+
+/*-----------------------------------------------*/
+#flash #flashTitle{
+    /* background: teal; */
+    color: teal;
+    text-align: center;
+    text-transform: uppercase;
+}
+#flashInfo marquee{
+    color: orangered;
+}
